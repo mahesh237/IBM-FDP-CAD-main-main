@@ -12,6 +12,10 @@ print(rc)
 def index():
     return render_template("index.html")
 
+@app.route('/register')
+def register():
+    return render_template("Registration.html")
+
 @app.route('/contact')
 def contact():
     return render_template("contact.html")
