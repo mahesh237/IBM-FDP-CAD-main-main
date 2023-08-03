@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UNI-ACC Homepage</title>
+    <title>LNCT Registration Page</title>
     <link rel="stylesheet" href="../static/css/s.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
@@ -18,7 +18,6 @@
         <li><a href="/">Home</a></li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="/register">Register</a></li>
-        
         <li class="dropdown">
           <div class="dropbtn" id="loginBtn">Login</div>
           <div class="dropdown-content" id="myDropdown">
@@ -30,13 +29,28 @@
       </ul>
     </nav>
 
-    <section class="hero">
-      <h1>UNI-ACC</h1>
-      <p>
-        A digital initiative by the institute facilitating Faculty, Students,
-        Parents, and Alumni to access and process Academics, Research,
-        Supporting services at one common platform.
-      </p>
+    <!-- Login Section -->
+    <section class="login-section hero">
+      <h2>Login</h2>
+      <form action="/register" method="post">
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" required />
+        <form action="/register" method="post">
+          <label for="username">Email:</label>
+          <input type="text" id="username" name="username" required />
+          <form action="/register" method="post">
+            <label for="username">Role:</label>
+            <input type="text" id="username" name="username" required />
+      <form action="/register" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <input type="submit" value="Login" class="dropbtn" />
+   
+      </form>
     </section>
 
     <script src="../static/js/script.js"></script>
